@@ -1,16 +1,28 @@
+                                                         #Guessing a random number
+
+                                                         #importing random number generator module
 import random
+
+                                                          #random number between 1 and 100
 number = random.randint(1, 100)
+
+
 
 print("Type your guess between 0 and 100")
 
 guess = -1
+
+                                                            #guess has to be a number
 while guess !=number:
     
-    guess = int(input("Your guess is:"))
+    guess = int(input("Your guess is:"))                    #Asking for a number input
         
     if guess == number:
+                                                            #If we guessed the number it will print "You guessed teh number..." text
         print("You guessed the number, congratulations)
+                                                            #if the input is too high it will print "A bit more down" text
     elif guess > number:
         print("A bit more down")
+                                                            #If the input is too low it will print "A bit more up" text
     else:
         print("A bit more up")
