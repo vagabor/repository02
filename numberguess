@@ -18,7 +18,7 @@ while guess !=number:
     guess = int(input("Your guess is:"))                    #Asking for a number input
         
     if guess == number:
-                                                            #If we guessed the number it will print "You guessed teh number..." text
+                                                            #If we guessed the number it will print "You guessed the number..." text
         print("You guessed the number, congratulations")
                                                             #if the input is too high it will print "A bit more down" text
     elif guess > number:
